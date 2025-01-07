@@ -1,0 +1,15 @@
+.a{
+    text-decoration:underline;
+    background-color: orange;
+    font-family: Comic Sans MS;
+    font-weight: lighter;
+}
+#ab{
+    font-weight: bold;
+}
+.b{
+    text-decoration:line-through;
+    font-weight: lighter;
+    font-family: Comic Sans MS;
+
+}

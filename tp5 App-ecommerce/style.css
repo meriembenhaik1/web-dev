@@ -1,0 +1,380 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;  /* Remplir toute la hauteur de la fenêtre */
+  width: 100%; 
+  background-image: url('degrade.png');  /* Remplir toute la largeur de la fenêtre */
+}
+header{
+  display: flex;
+  flex-direction: row;
+  gap:250px; 
+  flex-wrap: wrap;
+  height:70px;
+  width:100%;
+  padding: 10px;
+  border: none;
+  align-items: center;
+  background-color: #262f2c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  color: white;
+  
+}
+.search{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+#ch{
+ padding-top: 1px;
+ height: 20px;
+ width: 150px;
+ border-radius: 3px;
+ border: solid 2px #17ff93;
+}
+
+
+@media screen and (max-width: 768px) {
+  header { /* Applique à la balise `header` */
+    flex-direction: column; /* Empile les éléments en colonne */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Centre les enfants horizontalement */
+    gap: 15px; /* Petit espace entre les enfants */
+    height: auto; /* Laisse la hauteur s'ajuster au contenu */
+    width: 100%; /* Prend toute la largeur */
+  }
+
+  .info {
+    gap: 10px; /* Réduit l'espace entre les éléments */
+    justify-content: center; /* Centre les éléments */
+  }
+
+  .search {
+    gap: 10px; /* Petit espace constant */
+    justify-content: center; /* Centre les champs de recherche */
+    margin-left: 0; /* Supprime le décalage */
+  }
+
+  #ch {
+    height: 20px;
+    width: 150px;
+  }
+
+  .panier {
+    justify-content: center; /* Centre le panier si nécessaire */
+    margin-left: 0; /* Supprime la marge gauche excessive */
+  }
+}
+.section1{
+  background-image: url('img1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+span{
+  color: #17ff93;
+}
+ul {
+  list-style-type: none;  /* Supprime les puces */
+  padding: 0;  /* Enlève le padding par défaut */
+  margin: 0;   /* Enlève la marge par défaut */
+}
+a{
+  text-decoration: none;
+  color: #17ff93;
+}
+.logo{
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 60px;
+  color: white;
+}
+.navbar{
+  display: flex;
+  gap: 20px;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+
+}
+nav{
+  display: flex;
+  gap:500px;
+  background-color: #262f2c;
+}
+.section2{
+  background-image: url('degrade.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap:100px; 
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.section3{
+  background-image: url('degrade.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  
+
+}
+.card {
+  height: 400px;
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, .2);
+  background-color: #262f2c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centrer les éléments horizontalement */
+
+  justify-content: space-evenly;  /* Espacer les éléments verticalement */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+.card h3 {
+  color: #17ff93;
+  margin: 0;  /* Enlever le margin pour avoir un meilleur alignement */
+}
+
+.card p {
+  text-align: center;  /* Centrer le texte du paragraphe */
+  margin: 0;  /* Enlever le margin pour une meilleure gestion de l'espacement */
+}
+
+#price {
+  font-size: 1.2rem;  /* Agrandir légèrement la taille du prix */
+}
+
+button {
+  height: 40px;
+  width: 130px;
+  font-weight: bold;
+  background-color: #008b4a;
+  border-radius: 10px;
+  border: #008b4a;
+  color: aliceblue;
+  margin-top: 20px;  /* Réduire le margin-top */
+  cursor: pointer;  /* Ajouter un curseur pointer pour le bouton */
+}
+
+/* Section contenant les cartes, pour espacer correctement les cartes */
+.section2,.section3 {
+  display: flex;
+  justify-content: space-around;  /* Espacer les cartes horizontalement */
+  gap: 20px;  /* Ajouter un espacement entre les cartes */
+  flex-wrap: wrap;  /* Permettre aux cartes de se réorganiser sur plusieurs lignes si nécessaire */
+}
+  .card-img {
+    width: 80%;  /* L'image prend 80% de la largeur de la carte */
+    height: auto;  /* Garder le ratio de l'image */
+    object-fit: cover;  /* Couvrir l'espace sans déformation */
+    border-radius: 8px;  /* Pour arrondir les coins de l'image */
+  }
+  .section3 h3{
+  color:#262f2c;
+  font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;
+  }
+.copyright{
+  margin-top: 700px;
+  font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    /* COLORS */
+    --background-color:#262f2c;
+    --white: white; 
+}
+*
+{
+    margin:0; padding:0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; 
+}
+body{
+    font-family: 'Poppins';
+    height: 100vh;
+}
+/* FOOTER */
+.footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: var(--background-color);
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-container{
+    position: relative; 
+    width: 20%;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.footer-container h3{
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+.footer-container ul li{
+    margin: 5px;
+}
+.footer-container ul li a{
+    font-size: 1em;
+    color: var(--white);
+}
+.footer-container ul li a:hover{
+    border-bottom: 2px solid var(--white);
+    transition: all .3s;
+}
+
+/* RESPONSIVE */
+/*
+@media screen and (max-width:950px) {
+    .footer-container{
+        width: 50%; 
+        padding: 30px 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .footer-container{
+        width: 100%; 
+        padding: 25px 10px;
+    }
+}*/
+table,td,th{
+  border-collapse:collapse;
+  border:1px solid #DDDDDD;
+}
+  
+  table{
+  width:100%;
+  }
+  
+  td, tr{
+  height:100px;
+  width:100px;
+  }
+  
+  .all{
+  background-color:#262f2c;
+  color:white;
+  font-size:13pt;
+}
+  
+  .col_number{
+  text-align:center;
+  width:10%;}
+  
+  .col_text{
+  padding-left:10px;
+  width: 35%;
+  }
+  
+  .col_chkbox{
+  text-align:center;
+  width:10%;}
+
+  #table_container{
+      width: 50%;
+      margin: 50px 100px;
+
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  #container_summary{
+      margin-top:2px;
+      border: 1px solid #DDDDDD;
+      background-color: #efefef;
+      color:#303030;
+      display:flex;
+      flex-direction: row;
+  }
+      #p1{
+      margin:0 px;
+      }
+      
+      #p3{
+      width:72%;
+      text-align: right;
+      padding:8px 0px;
+  }
+
+         #form_container{
+          border:1px solid #DDDDDD;
+          padding:10px 10px;}
+          
+          .form_group{
+          display:inline-block;
+          }
+          
+          .form_label{
+          font-weight:bold;
+          }
+          
+          .form_field{
+          height: 25px;
+          }
+
+          #container_btn{
+              border: 1px solid #DDDDDD;
+              padding:10px;
+              height: 100px;
+          }
+              
+              button{
+              height: 32px;
+              cursor: pointer;
+              border: 0px;
+              color:white;
+              font-weight: bold;}
+              
+              .btn-add{
+              background-color:#05b505;}
+              
+              .btn-del{
+              background-color:#262f2c;
+              float: right;
+              display:iniline;
+              margin: 5px;}
+              
+              .btn-consol{
+              background-color:#262f2c;
+              float: right;
+              margin: 5px;}
+              
+              button:hover{
+              opacity:80%;}

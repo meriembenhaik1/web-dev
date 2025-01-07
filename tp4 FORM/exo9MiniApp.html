@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="hello.js"></script>
+    <title>Form PFE</title>
+</head>
+<body>
+        <div class="style1">
+            <div class="htext">
+            <h2>جامعة العلوم والتكنولوجيا هواري بومدين–الجزائر</h2>
+            <h2 id="fr">Université de la science et de la technologie de houari boumediene</h2>
+            <h2 id="in">Faculté d'informatique</h2>
+            </div>
+            <img src="usthb.png" alt="usthb">    
+        </div>
+
+        <div class="tp4">
+            <div class="style2">
+                <div class="htext">
+                <h2 id="tp4">TP 4-1: Fiche de fin d'études <br> (Licence/Master), Filière informatique</h2>
+               <br>
+               <hr style="border: 1px solid gray;">
+               <br> 
+                <p id="par">le nom et la photo associés à votre compte Gogle seront enregistrés lorsque vous 
+                importerez des fichiers et que vous envereez ce formulaire. Votre adresse e-mail ne fait pas 
+                partie de votre réponse.
+                </p>
+                <br>
+                <p id="warn">*Obligatoire</p>
+                </div>   
+            </div>
+        </div>
+        <div class="simples">
+           <div><p>Nom <span>*</span></p></div>
+           <input type="text" placeholder="Votre réponse">
+           <hr style="border: 1px solid gray;">
+        </div>
+
+        <div class="simples">
+            <div><p>Prénom <span>*</span></p></div>
+            <input type="text" placeholder="Votre réponse" required>
+            <hr style="border: 1px solid gray;">
+         </div>
+
+         <div class="simples">
+            <div><p>Matricule <span>*</span></p></div>
+            <input type="text" placeholder="Votre réponse" required>
+            <hr style="border: 1px solid gray;">
+         </div>
+
+         <div class="simples">
+            <div><p>Email <span>*</span></p></div>
+            <input type="text" placeholder="Votre réponse" required>
+            <hr style="border: 1px solid gray;">
+         </div>
+
+         <div class="simples">
+            <div><p>Téléphone</p></div>
+            <input type="text" placeholder="Votre réponse" required>
+            <hr style="border: 1px solid gray;">
+         </div>
+
+         <div class="simples">
+            <p>Palier</p>
+            <div class="radio-group">
+            <input type="radio" id="lic1" name="palier" value="lic">
+            <label for="lic1">Licence</label><br>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="mas1" name="palier" value="mas">
+            <label for="mas1">Master</label><br>
+        </div>
+
+        </div>
+
+        <div class="simples">
+            <div><p>Votre Spécialité <span>*</span></p></div>
+            <input type="text" list="specialité" name="spe" placeholder="Spécialité" id="a">
+            <datalist id="specialité">
+                <option value="ISIL">ISIL</option>
+                <option value="ACAD">ACAD</option>
+                <option value="SEC">SEC</option>
+                <option value="SE">SE</option>
+            </datalist>
+        </div>
+
+        <div class="simples">
+            <p>Type du projet <span>*</span></p>
+            <div class="radio-group">
+            <input type="radio" id="in1" name="palier" value="in">
+            <label for="in1">Interne</label><br>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="ex1" name="palier" value="ex">
+            <label for="ex1">Externe</label><br>
+        </div>  
+        </div>  
+
+        <div class="simples">
+            <div><p>Domaine<span>*</span></p></div>
+        
+            <div class="checkbox-group">
+                <input type="checkbox" name="gl" id="gl1">
+                <label for="gl1">Génie Logiciel, Système d'information et Base de données</label>
+            </div>
+        
+            <div class="checkbox-group">
+                <input type="checkbox" name="gl" id="gl2">
+                <label for="gl2">Réseau Sécurité, Réseau mobile et système d'exploitation</label>
+            </div>
+        
+            <div class="checkbox-group">
+                <input type="checkbox" name="gl" id="gl3">
+                <label for="gl3">Intelligence artificielle et meta heuristiques</label>
+            </div>
+        
+            <div class="checkbox-group">
+                <input type="checkbox" name="gl" id="gl4">
+                <label for="gl4">Développement Web et Mobile</label>
+            </div>
+        
+            <div class="checkbox-group">
+                <input type="checkbox" name="gl" id="gl5">
+                <label for="gl5">Architecture</label>
+            </div>
+        
+            <div class="checkbox-group">
+                <input type="checkbox" name="gl" id="gl6">
+                <label for="gl6">Vision et Imagerie</label>
+            </div>
+        
+            <div class="checkbox-group">
+                <input type="checkbox" name="gl" id="gl7">
+                <label for="gl7">Informatique Théorique</label>
+            </div>
+        
+            <div class="checkbox-group">
+                <input type="checkbox" name="gl" id="gl8">
+                <label for="gl8">Bioinformatique</label>
+            </div>
+        </div>
+        
+
+        <div class="simples">
+            <div><p>Intitulé du Projet <span>*</span></p></div>
+            <input type="text" placeholder="Votre réponse">
+            <hr style="border: 1px solid gray;">
+         </div>
+
+         <div class="simples">
+            <div><p>Résumé du Projet<span>*</span></p></div>
+            <input type="text" placeholder="Votre réponse">
+            <hr style="border: 1px solid gray;">
+         </div>
+
+
+        <div class="last">
+        <button id="btn">Envoyer</button>
+        <p id="aa" onclick="hello()">Effacer le formulaire</p>
+        </div>
+  
+</body>
+</html>

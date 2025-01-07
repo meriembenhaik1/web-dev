@@ -1,0 +1,30 @@
+h1{
+    color:red;
+}
+/*rendu1*/
+h1{
+    color: red;
+}
+/*rendu2*/
+p{
+    color: red;
+}
+/*rendu3*/
+h1{
+    color: red;
+}
+h2{
+    color:blue;
+}
+/*rendu4*/
+h2{
+    color:red;
+}
+/*rendu5*/
+body{
+    color: red;
+}
+/*rendu6*/
+h1,h2,p{
+    color: red;
+}

@@ -1,0 +1,19 @@
+/*rendu1*/
+#1{
+color: red;
+}
+#4{
+color: blue;
+}
+/*rendu2*/
+#2{
+    color: red;
+}
+/*rendu3*/
+#1 , #2{
+    color: red;
+}
+/*rendu4*/
+#1{
+    color: red;
+}

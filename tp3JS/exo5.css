@@ -1,0 +1,46 @@
+body,html{
+    background-image:url(photo-1621955964441-c173e01c135b.avif);
+    background-position: fixed;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100%;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border: solid 1px red;
+    border-radius: 10px;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*Cette propriété déplace le conteneur de manière à ce qu'il soit centré sur les coordonnées définies par top et left. Voici comment cela fonctionne :
+    translate(-50%, -50%) déplace l'élément de 50 % de sa propre largeur vers la gauche (pour compenser le positionnement à gauche) et de 50 % de sa propre hauteur vers le haut (pour compenser le positionnement en haut).
+    En résumé, cela permet de centrer complètement l'élément, car sans cette transformation, il serait positionné avec son coin supérieur gauche au centre de la page.*/
+    background: rgba(255,255,255,0.2);
+}
+#titre, #annee, #producteur{
+    margin:10px;
+    width: 250px;
+    height: 20px;
+    border-radius: 10px;
+}
+#btn{
+    margin:10px;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    cursor:grab;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    color: aliceblue;
+    background-color: red;
+}
+

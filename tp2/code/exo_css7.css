@@ -1,0 +1,16 @@
+.a{
+    text-decoration:underline;
+    background-color: orange;
+    font-style: italic;
+    list-style-type:circle;
+    font-weight: lighter;
+}
+#ab{
+    font-weight: bold;
+}
+.b{
+    text-decoration:line-through;
+    font-weight: lighter;
+    list-style-type: none;
+
+}

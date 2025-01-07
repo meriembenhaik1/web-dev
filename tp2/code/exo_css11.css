@@ -1,0 +1,16 @@
+#id1{
+    text-align: left;
+    border: 1px solid black;
+    }
+    #id2{
+    text-align: center;
+    border: 3px solid black;
+    }
+    #id3{
+    text-align: right;
+    border: 2px dotted black;
+    }
+    #id4{
+    text-align: left;
+    border: 2px dotted red;
+    }

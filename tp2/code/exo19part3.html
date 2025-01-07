@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            border: 1px solid black;
+            background-color: #55AAFF;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            background-color: #BBEEFF;
+
+        }
+        .container{
+            padding: 10px;
+            display: flex;
+            grid-gap: 10px;
+            justify-content: right;
+            grid-column-start: 2;
+            border: 1px dashed black;
+            background-color:#55AAFF ;
+            grid-row-end: 1;
+            display:fixed;
+            }
+        .item4{
+            text-align: left;
+            padding-top: 30px;
+            padding-left: 10px;
+            font-weight: bolder;
+            font-size: 25px;
+            position: fixed;
+
+        }
+        .ctn{
+            display: grid;
+            background-color: white;
+            border: 1px dashed black;
+            grid-template-columns: 1fr 1fr;
+            position: fixed;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="ctn">
+    <div class="container">
+        <div class="item" id="item1">Accueil</div>
+        <div class="item">Page 1</div>
+        <div class="item" id="item3">Page 2</div>
+        <div class="item">Connexion</div>
+    </div>
+    <div class="item4">Logo</div>
+</div>
+</body>
+</html>

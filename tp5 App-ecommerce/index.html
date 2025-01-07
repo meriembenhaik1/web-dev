@@ -1,0 +1,199 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>KELTHOUMA || TECH STORE</title>
+ </head>
+ <body>
+  <header>
+    <div class="info">
+    <p>Tel : 0657 96 04 50</p>
+    <p>E-mail : kelthouma_Tech_store@gmail.com</p>
+    <p>horaires : 9h-22h Alger</p>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="chercher" id="ch">
+      <i class="fa-solid fa-magnifying-glass fa-1x" style="color:#17ff93;"></i>
+    </div>
+    <div class="panier">
+    <a href="#panier">
+    <i class="fa-solid fa-cart-shopping fa-3x" style="color:#17ff93;" ></i>
+    </div> 
+  </header>
+
+  <nav>
+    <div class="logo">
+     <h2>kelthouma <span>|| Tech.store.</span></h2>
+    </div>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#section2">Our Products</a></li>
+    </ul>
+  </nav>
+
+<div class="section1">
+</div>
+<section>
+<div class="section2" id="section2">
+
+
+
+  <div class="card">
+    <img src="Logitech-GPRO-X-SUPERLIGHT.jpg" alt="Logitech G Pro X Superlight" class="card-img">
+    <h3 id="nom">Logitech G Pro X Superlight</h3>
+    <p>Souris ultra-légère pour les joueurs professionnels,<br>capteur HERO 25K, sans fil.</p>
+    <h3 class="price">18 000 DZD</h3>
+    <button onclick="recuperer(event)">Ajouter au panier</button>
+  </div>
+
+  <div class="card">
+    <img src="khedra.jpeg" alt="Razer DeathAdder V2" class="card-img">
+    <h3 id="nom">Razer DeathAdder V2</h3>
+    <p>Souris ergonomique avec un capteur optique de 20 000 DPI et switches optiques.</p>
+    <h3 class="price">14 000 DZD</h3>
+    <button onclick="recuperer(event)">Ajouter au panier</button>
+  </div>
+  <div class="card">
+    <img src="r600-weight-3mbps-poster.jpg__1920x700_q100_crop-scale_optimize_subsampling-2.jpg" alt="SteelSeries Rival 600" class="card-img">
+    <h3 id="nom">SteelSeries Rival 600</h3>
+    <p>Double capteur pour une précision extrême et boutons ajustables.</p>
+    <h3 class="price">20 000 DZD</h3>
+    <button onclick="recuperer(event)">Ajouter au panier</button>
+  </div>
+  <div class="card">
+    <img src="Dell-latitude-3420-1.jpg" alt="Logitech G Pro X Superlight" class="card-img">
+    <h3 id="nom">Dell Latitude 3420</h3>
+    <p>Processeur Intel Core i5 11e génération, 8 Go de RAM, 256 Go SSD, écran 14 pouces.</p>
+    <h3 class="price"> 93 000 DZD</h3>
+    <button onclick="recuperer(event)">Ajouter au panier</button>
+  </div>
+  <div class="card">
+    <img src="lenovo.jpg" alt="Razer DeathAdder V2" class="card-img">
+    <h3 id="nom">Lenovo Legion 5 Pro</h3>
+    <p>Processeur Intel Core i7, RTX 4070, 32 Go de RAM, écran QHD 165 Hz.</p>
+    <h3 class="price">356 000 DZD</h3>
+    <button onclick="recuperer(event)">Ajouter au panier</button>
+  </div>
+  <div class="card">
+    <img src="6B2Q5EA.jpg" class="card-img">
+    <h3 id="nom">HP PRO TOWER 290 G9</h3>
+    <p>Processeur Intel Core i7 12e génération, 8 Go de RAM, 512 Go SSD.</p>
+    <h3 class="price">145 000 DZD</h3>
+    <button onclick="recuperer(event)">Ajouter au panier</button>
+  </div>
+  <div class="card">
+      <img src="images.jpg" alt="Logitech G Pro X Superlight" class="card-img">
+      <h3 id="nom">Acer Chromebook 314</h3>
+      <p>Processeur Mediatech, 4 Go de RAM, 32 Go SSD, écran HD.</p>
+      <h3 class="price"> 35 000 DZD</h3>
+      <button onclick="recuperer(event)">Ajouter au panier</button>
+    </div>
+    <div class="card">
+      <img src="IMG_0575.jpeg" alt="Razer DeathAdder V2" class="card-img">
+      <h3 id="nom">Microsoft Surface Pro 9</h3>
+      <p>Processeur Intel Core i5 12e génération, écran tactile 13 pouces, 8 Go de RAM, 256 Go SSD.</p>
+      <h3 class="price">245 000 DZD</h3>
+      <button onclick="recuperer(event)">Ajouter au panier</button>
+    </div>
+</div>
+</section>
+
+<section>
+<div class="section2" id="section2">
+</div>
+</section>
+
+<section>
+
+
+<div class="section3" id="panier">
+  <div id="table_container">
+  <table border="1"  style="padding: 1px;" id="table" >
+      <tr class="all">
+          <td class="col_number">Nom du produit</td>
+          <td class="col_text">Prix unitaire</td>
+          <td class="col_text">Qte</td>
+          <td class="col_number">Total</td>
+          <td class="col_chkbox">Supression</td>
+      </tr>
+  </table>
+  <div id="container_summary">
+  <p id="p3">Totale prix=0 DZD</p>
+  </div>
+  <button onclick="confirmer()" class="btn-consol" >Confirmer l'achat</button>
+  <button onclick="deleteRow()" class="btn-del" >Supprimer le produit</button>
+  </div>
+  </div>
+  </div>
+</section>
+
+
+
+<section>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="wrap">
+          <div class="footer-container">
+              <a href="#" class="logo">kelthouma <span>|| Tech.store.</a>
+          </div>
+          <div class="footer-container">
+              <h3>Company</h3>
+              <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">our stores</a></li>
+                  <li><a href="#">Phone</a></li>
+                  <li><a href="#">E-mail</a></li>
+                  <li></li>
+              </ul>
+          </div>
+          <div class="footer-container">
+              <h3>Get Help</h3>
+              <ul>
+                  <li><a href="#">Shopping</a></li>
+                  <li><a href="#">Delivery</a></li>
+                  <li><a href="#">Payment</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li></li>
+              </ul>
+          </div>
+          <div class="footer-container">
+              <h3>Menu</h3>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Promotion</a></li>
+                  <li><a href="#">Pre-order</a></li>
+                  <li></li>
+              </ul>
+          </div>
+          <div class="footer-container">
+              <h3>Account</h3>
+              <ul>
+                  <li><a href="#">Account</a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Register</a></li>
+                  <li><a href="#">credit note</a></li>
+                  <li></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+ </html>

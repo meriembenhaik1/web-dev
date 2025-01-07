@@ -1,0 +1,25 @@
+html{
+font-size: 10px;
+}
+
+div{
+font-size: 12px;
+}
+#id1{
+font-size: 10px;
+}
+
+#id2{
+font-size: 7.5pt;
+/* 1pt ~ 1.33px */
+}
+#id3f{
+font-size: 2em;
+/* Relative à la taille par defaut de l'élément
+2*12px=24px*/
+}
+#id4{
+font-size: 2rem;
+/* Relative à la taille de l'élément racine (html)
+10*2=20px*/
+}

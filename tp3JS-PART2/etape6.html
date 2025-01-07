@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="jsPart45.js"></script>
+   <title>etape 6</title>
+</head>
+<body>
+    <div id="form_container">
+        <div class="form_group">
+        <label class="form_label">Nom :</label>
+        <input type="text" id="form_nom" class="form_field"/>
+        </div>
+        <div class="form_group">
+        <label class="form_label">Prenom: </label>
+        <input type="text" id="form_prenom" class="form_field"/>
+        </div>
+        <div class="form_group">
+        <label class="form_label">Points :</label>
+        <input type="number" id="form_points" class="form_field"/>
+        </div>
+        <button onclick="doNewData()" class="btn-add">
+         Ajouter
+        </button>
+
+    <div id="table_container">
+    <table border="1"  style="padding: 1px;" id="table" >
+        <tr class="all">
+            <td class="col_number">N°</td>
+            <td class="col_text">Nom</td>
+            <td class="col_text">Prénom</td>
+            <td class="col_number">Points</td>
+            <td class="col_chkbox">Select</td>
+        </tr>
+    </table>
+    <div id="container_summary">
+    <p id="p1">0 ligne(s)</p>
+    <p id="p3">Totale point(s)=0</p>
+    </div>
+    <button onclick="consoleTableau()" class="btn-consol" >Console Tableau</button>
+    <button onclick="deleteRow()" class="btn-del" >Supprimer</button>
+</div>
+</div>
+
+</body>
+</html>
